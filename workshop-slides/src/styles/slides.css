@@ -1402,3 +1402,302 @@ h3 {
   );
   border-color: rgba(108, 113, 196, 0.3);
 }
+
+/* ─── Deep-dive section slides ─── */
+
+/* Phase header with number pill */
+.phase-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.phase-number {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: white;
+  background: var(--cursor-blue);
+  flex-shrink: 0;
+}
+
+.phase-number.plan { background: var(--cyan); }
+.phase-number.design { background: var(--purple); }
+.phase-number.develop { background: var(--cursor-blue); }
+.phase-number.test { background: var(--orange); }
+.phase-number.review { background: var(--green); }
+.phase-number.deploy { background: var(--red); }
+
+/* Discovery question cards */
+.discovery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.discovery-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.discovery-card .dq-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.discovery-card .dq-text {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text-primary);
+  font-style: italic;
+}
+
+/* Pain point list */
+.pain-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.pain-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.6rem 0.85rem;
+  background: linear-gradient(135deg, rgba(220, 50, 47, 0.06), rgba(220, 50, 47, 0.02));
+  border: 1px solid rgba(220, 50, 47, 0.15);
+  border-radius: 8px;
+  border-left: 3px solid var(--red);
+}
+
+.pain-item .pain-icon {
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.pain-item .pain-text {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
+.pain-item .pain-text strong {
+  color: var(--red);
+}
+
+/* Solution cards */
+.solution-block {
+  margin-top: 0.5rem;
+}
+
+.solution-card {
+  background: linear-gradient(135deg, rgba(42, 161, 152, 0.08), rgba(42, 161, 152, 0.02));
+  border: 1px solid rgba(42, 161, 152, 0.2);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.solution-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.solution-header .solution-icon {
+  font-size: 1.2rem;
+}
+
+.solution-header .solution-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--cyan);
+}
+
+.solution-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.solution-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
+.solution-step .step-num {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--cyan);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+/* Competitor tools row */
+.competitor-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  padding: 0.6rem 1rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+}
+
+.competitor-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.competitor-row .tool-pills {
+  margin-top: 0;
+}
+
+/* Video placeholder */
+.video-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(101, 123, 131, 0.06), rgba(101, 123, 131, 0.02));
+  border: 2px dashed var(--border-strong);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 0.75rem;
+  min-height: 200px;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.video-placeholder .vp-icon {
+  font-size: 2.5rem;
+  opacity: 0.4;
+}
+
+.video-placeholder .vp-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.video-placeholder .vp-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+/* Outcome callout */
+.outcome-callout {
+  background: linear-gradient(135deg, rgba(38, 139, 210, 0.1), rgba(38, 139, 210, 0.03));
+  border: 1px solid rgba(38, 139, 210, 0.25);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+.outcome-callout .outcome-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--cursor-blue);
+  margin-bottom: 0.25rem;
+}
+
+.outcome-callout .outcome-text {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+/* Placeholder badge */
+.placeholder-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 100px;
+  font-size: 0.55rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: rgba(181, 137, 0, 0.15);
+  color: var(--yellow);
+  border: 1px solid rgba(181, 137, 0, 0.3);
+  margin-left: 0.5rem;
+}
+
+/* Deep-dive two-col for discovery+pain / solution layout */
+.deepdive-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  margin-top: 0.5rem;
+}
+
+.deepdive-col h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Section divider slide */
+.section-divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.75rem;
+}
+
+.section-divider .divider-number {
+  font-size: 4rem;
+  font-weight: 800;
+  opacity: 0.12;
+  line-height: 1;
+}
+
+.section-divider h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.section-divider .divider-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  line-height: 1.6;
+}
