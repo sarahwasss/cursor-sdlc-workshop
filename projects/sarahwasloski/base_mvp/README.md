@@ -2,6 +2,8 @@
 
 This folder is where your project code lives.
 
+**Workshop status:** Base MVP scaffold complete (`index.html` runs locally).
+
 ## What to Build
 - A minimal, working version of your project
 - Should run locally and do *something* visible
